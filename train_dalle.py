@@ -139,7 +139,12 @@ if __name__ == "__main__":
                     help = 'Feed forward dropout.')
     parser.add_argument('--loss_img_weight', default = 7, type = int, 
                     help = 'Image loss weight')
-
+     parser.add_argument('--codebook_dim', default = 1024, type = int, 
+                    help = 'codebook_dim')
+    parser.add_argument('--embedding_dim', default = 256, type = int, 
+                    help = 'embedding_dim')
+    
+    
     args = parser.parse_args()
 
     #random seed fix
